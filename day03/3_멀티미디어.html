@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <!-- p.28 -->
+        <!-- 무료사진/음악/영상 : https://pixabay.com/ko-->
+    <img src="사진.jpg" />                          <br/>
+
+    <audio src="오디오.mp3" controls ></audio>        <br/>
+        <!-- 
+            audio 태그 속성
+                src     : 오디오파일 경로
+                controls : 음악재생 도구 출력
+                autoplay : 자동실행
+                loop     : 반복재생
+        -->
+    <audio controls > <!-- 여러개의 오디오 넣을때 -->
+        <source src="오디오.mp3" />
+        <source src="오디오.mp3" />
+        <source src="오디오.mp3" />
+    </audio>                                             <br/>
+
+    <video src="영상.mp4" controls autoplay muted width="500px" height="500px"></video>                      <br/>
+     <!-- 
+            video 태그 속성
+                src         : 비디오 파일 경로
+                controls    : 음악재생 도구 출력
+                width       : 가로사이즈 
+                height      : 세로사이즈
+                autoplay    : 자동실행 [ 최근부터 브라우저 정책 때문에 금지 단)소리끄면(muted) 가능 ]
+                muted       : 음소거
+        -->
+
+        <!-- 외부 멀티미디어 iframe -->
+        <!-- 1. 동영상 퍼가기 : 유튜브에서 퍼가기  -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-cieu5pE0bs?si=GG93J3LP0FCQX5FL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <br/> <br/>
+
+        <!-- 2. 지도 퍼가기 : 구글 지도 퍼가기 -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.372279892256!2d126.85049917642172!3d37.31000843879536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f84d2952ac7%3A0x716b425bf7af7850!2z7ZWc64yA7JWe7Jet!5e0!3m2!1sko!2skr!4v1707221313807!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </body>
+</html>
