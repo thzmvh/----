@@ -1,0 +1,48 @@
+h3{font-family: 궁서,돋움,궁서;} /*맨 앞의 글씨체 적용*/
+/*구글폰트 상업 사용 가능, 배민폰트도 사용 가능 '눈누' 에서 사용*/
+/*눈누에서 원하는 글씨체 웹폰트 복사 붙여넣기*/
+@font-face {
+    font-family: 'TTHakgyoansimUndongjangL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimUndongjangL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+h4{font-family: 'TTHakgyoansimUndongjangL';}
+p{font-size: 12px;} /* 픽셀은 '고정크기'다*/
+.teacher_label{font-size: 30px;
+                /* font-weight: bold; 진하게 */
+                /* font-weight: lighter; 조금 연하게 */
+                /* font-weight: bolder; 조금 진하게 */
+                font-weight: 900; /* 100~900 중 직접 선택, 400=보통 */
+                font-style: italic; /* 기울임 */
+                /*direction: rtl; 우 > 좌 표기 */
+                direction: ltr;/* 좌 > 우 표기 */
+                /*text-align: left; 좌측 정렬 */
+                /* text-align: right; 우측 정렬 */
+                text-align: center; /* 가운데 정렬 */
+                text-indent: 200px; /* 들여쓰기 */
+                text-transform: capitalize; /* 첫 글자를 대문자 변환 */
+                /* text-transform: uppercase; /* 대문자로 변환 */
+                /* text-transform: lowercase; /* 소문자로 변환 */
+                /* text-transform: none; /* 변환 없음 */
+                letter-spacing: 5px; /* 자간 */
+                word-spacing: 12px; /* 어간 */
+                line-height: 180%; /* 줄 간격 주로 160~180% 사이*/
+                text-decoration: underline;} /* 밑줄 */
+                /* text-decoration: line-through; 취소선 */
+                /* text-decoration: overline; 윗줄 */
+                /* text-decoration: none;} 없음 */
+
+                /* 정리하자면
+                2. font-size        : 글꼴 크기
+                3. font-weight      : 글꼴 굵기
+                4. font-style       : 글꼴 기울기
+                5. direction        : 글꼴 작성 방향
+                6. text-align       : 글꼴 가로수평 정렬
+                7. text-indent      : 들여쓰기
+                8.text-transform    : 대소문자로 자동변환
+                9. letter-spacing   : 자간
+                10. word-spacing    : 어간
+                11. line-height     : 줄 간격
+                12. text-decoration : 및줄
