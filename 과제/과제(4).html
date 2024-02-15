@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+</head>
+<body>
+        <form>
+            <fieldset>
+                <legend> 비회원 게시판 </legend>
+                카테고리 <select>
+                            <option>공지사항</option>
+                            <option>서버점검</option>
+                            <option>주문관련</option>
+                        </select>
+                <br> <input type="text" placeholder="작성자"> <input type="text" placeholder="비밀번호">
+                <hr>
+                <input type="text" placeholder="게시물 제목 입력">
+                <hr>
+                <textarea placeholder="게시물 내용입력" rows="10" cols="60"></textarea>
+                <br>공개선택 
+                    <input type="radio" name="공개여부"/>공개글
+                    <input type="radio" name="공개여부"/>비공개글
+                <br> 공유선택
+                    <input type="checkbox" name="공유방식"/>카카오톡
+                    <input type="checkbox" name="공유방식"/>트위터
+                    <input type="checkbox" name="공유방식"/>네이버카페
+                <br> 작성일자
+                    <input type="date"/> 
+                     작성시간
+                    <input type="time"/>
+                <hr>
+                첨부파일 <input type="file"/>
+                <br><br>
+                    <input type="button" value="목록보기"/>
+                    <input type="button" value="글쓰기"/>
+                    <input type="reset" value="다시쓰기"/>
+            </fieldset>
+        </form>
+    
+</body>
+</html>
