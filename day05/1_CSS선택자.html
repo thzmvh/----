@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html> <!-- 고조 할머니 -->
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='CSS.선택자.css'>
+
+    </head>
+    <body> <!-- 증조 할머니 -->
+
+        body구역
+        <h1>h1구역</h1>
+        <h1 class="box1">h1구역</h1>
+        <h1 class="box1 box2">h1구역</h1>
+        <h1 class="box1" id="box3">h1구역</h1>
+
+        <h2>h2구역</h2>
+
+        <!-- <p>, <h> 태그는 자손을 가질 수 없다. (구역/박스 묶을 때) 주로 div(division), span 를 쓴다. -->
+        <div id="box5"> <!-- 할머니 -->
+            <div> <!-- 엄마 -->
+                div 구역 안에 있는 h1 구역 
+                <div> div 구역 안에 h1 구역 안에 h1 구역 </div> <!-- 나 -->
+            </div>
+
+            <div> <!-- 이모 -->
+                div 구역 안에 있는 h3 구역
+                <div> div p구역 안에 있는 h3 구역 </div> 
+            </div>
+        </div>
+
+        <div id="box6"> 여기는 box6</div>
+
+    </body>
+</html>

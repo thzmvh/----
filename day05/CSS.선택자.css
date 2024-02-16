@@ -1,0 +1,25 @@
+/* 1.*선택자 */ /* 와일드카드는 우선순위에서 마지막이다. */
+*{color: red;} /*와일드카드는 전체에 적용하는 것이다. */
+
+/* 2.마크업 선택자 */
+h1{color: blue;}
+
+/* 3.class 선택자 */   /* *(와일드카드) < 마크업 < class */
+.box1{color: green;}
+.box2{background-color: pink;}
+
+/* 4.id 선택자 */
+#box3{color: brown;}
+#box4{background-color: purple;} /* id는 하나만 존재 가능하다. */
+
+/* 즉 css에서의 스타일 적용 우선순위는
+*(와일드카드) < 마크업 < class < id 가 되는 것이다. */
+
+/* 4. 띄어쓰기 후손 선택자 */
+#box5 div{color: aqua;}
+
+/* 5.자손 선택자 : box5의 딸 '>'로 표시 (바로 아래 자손)의 구역 */ 
+#box5 > div{color: yellow;}
+
+/* 6. , 다수 선택자 : 쉼표 */
+#box5,#box6 {background-color: black;}
